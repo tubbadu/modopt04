@@ -37,6 +37,7 @@ void signal_ex::signal_ex_thread(void) {
 
 	// 4th delta cycle
 	wait(SC_ZERO_TIME);
+
 	// 5th delta cycle
 	wait(SC_ZERO_TIME);
 	cout << "NOTE: signal_ex_thread done" << endl;
