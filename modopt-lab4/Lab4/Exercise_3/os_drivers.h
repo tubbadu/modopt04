@@ -2,6 +2,11 @@
 #define OS_DRIVERS_H
 
 #include <ctime>
+#include <string.h>
+#include <stdio.h>
+#include <unistd.h>
+
+using namespace std;
 
 // Here you must implement a module that implements all three interfaces
 static const char *NAMES[] = { "RED", "YELLOW", "GREEN" };
@@ -17,18 +22,20 @@ SC_MODULE(OS_drivers), public light_if, public timer_if, public car_if {
 		cout << sc_time_stamp() << " sec. " << NAMES[c] << endl;
 	}
 	virtual void wait_for_car() {
-		time_t start;// = time(); // Since 01/01/1970 in seconds
-		time(&start); 
-		cout << "Press enter when car arrives, or type STOP to end";
+		time_t start = time(nullptr); // Since 01/01/1970 in seconds
+		
+		cout << "Press enter when car arrives, or type STOP to end: > ";
 		string s;
 		cin >> s; 
 		if (s=="STOP") {
 			sc_stop();
 		}
-		wait(time() - start, SC_SEC);
+		
+		wait(time(nullptr) - start, SC_SEC);
+		
 	}
 	virtual void wait_for_sec(unsigned int s) {
-		sleep(s * 1000); // Sleep for s*1000 milliseconds
+		sleep(s); // Sleep for s*1000 milliseconds (e invece no)
 		wait(s, SC_SEC); // advance simulation time
 	}
 	/*virtual void reset() {

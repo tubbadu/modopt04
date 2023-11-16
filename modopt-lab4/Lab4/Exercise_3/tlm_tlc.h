@@ -8,6 +8,7 @@ public:
 	sc_port<car_if> car;
 	sc_port<timer_if> timer;
 	sc_port<light_if> light;
+	
 	SC_CTOR(Abstract_TLC) {
 		SC_THREAD(controller);
 	}
@@ -15,6 +16,7 @@ public:
 		//light->reset(); 
 		//car->reset(); 
 		//timer->reset();
+		
 		while (1) {
 			light->set_sec(RED);
 			light->set_main(GREEN);
