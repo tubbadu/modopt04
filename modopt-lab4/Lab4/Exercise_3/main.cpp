@@ -5,7 +5,7 @@
 
 int sc_main (int argc, char * argv[])
 { 
-	TLC_SW TLC("Controller") ;
+	Abstract_TLC TLC("Controller") ;
 	OS_DRIVERS os_drivers("OS drivers");
 	
 	TLC.car(os_drivers);

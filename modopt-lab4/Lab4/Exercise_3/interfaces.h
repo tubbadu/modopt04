@@ -1,5 +1,7 @@
 #ifndef INTERFACE_H
 #define INTERFACE_H
+enum color { RED=0, YELLOW=1, GREEN=2 };
+
 struct light_if: virtual public sc_interface {
 	virtual void set_main(color)=0; 
 	virtual void set_sec(color)=0;
