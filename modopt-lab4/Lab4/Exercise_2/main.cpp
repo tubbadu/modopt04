@@ -1,8 +1,11 @@
-#define ABSTRACT_TIMER
+#define ABSTRACT_TIMER_DISABLED
 
 #include <systemc.h>
+#include <cstdio>
 #include "tlc.h"
-#include "../Exercise_1/testbench.h"
+#include "testbench.h"
+
+
 #ifdef ABSTRACT_TIMER
 #include "timer.h"
 #else
