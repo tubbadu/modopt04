@@ -100,21 +100,8 @@ main.o: main.cpp /usr/local/systemc-2.3.3/include/systemc.h \
  /usr/local/systemc-2.3.3/include/sysc/utils/sc_utils_ids.h \
  /usr/local/systemc-2.3.3/include/sysc/utils/sc_pvector.h \
  /usr/local/systemc-2.3.3/include/sysc/utils/sc_string_view.h \
- /usr/local/systemc-2.3.3/include/sysc/packages/boost/utility/string_view.hpp \
- /usr/local/systemc-2.3.3/include/sysc/packages/boost/config.hpp \
- /usr/local/systemc-2.3.3/include/sysc/packages/boost/config/user.hpp \
- /usr/local/systemc-2.3.3/include/sysc/packages/boost/config/select_compiler_config.hpp \
- /usr/local/systemc-2.3.3/include/sysc/packages/boost/config/compiler/gcc.hpp \
- /usr/local/systemc-2.3.3/include/sysc/packages/boost/config/select_stdlib_config.hpp \
- /usr/local/systemc-2.3.3/include/sysc/packages/boost/config/stdlib/libstdcpp3.hpp \
- /usr/local/systemc-2.3.3/include/sysc/packages/boost/config/select_platform_config.hpp \
- /usr/local/systemc-2.3.3/include/sysc/packages/boost/config/platform/linux.hpp \
- /usr/local/systemc-2.3.3/include/sysc/packages/boost/config/posix_features.hpp \
- /usr/local/systemc-2.3.3/include/sysc/packages/boost/config/suffix.hpp \
- /usr/local/systemc-2.3.3/include/sysc/packages/boost/utility/string_view_fwd.hpp \
- /usr/local/systemc-2.3.3/include/sysc/utils/sc_vector.h \
- /usr/local/systemc-2.3.3/include/sysc/packages/boost/utility/enable_if.hpp \
- tlc.h testbench.h
+ /usr/local/systemc-2.3.3/include/sysc/utils/sc_vector.h tlc.h \
+ testbench.h
 main.cpp /usr/local/systemc-2.3.3/include/systemc.h :
  /usr/local/systemc-2.3.3/include/systemc :
  /usr/local/systemc-2.3.3/include/sysc/kernel/sc_cmnhdr.h :
@@ -217,18 +204,5 @@ main.cpp /usr/local/systemc-2.3.3/include/systemc.h :
  /usr/local/systemc-2.3.3/include/sysc/utils/sc_utils_ids.h :
  /usr/local/systemc-2.3.3/include/sysc/utils/sc_pvector.h :
  /usr/local/systemc-2.3.3/include/sysc/utils/sc_string_view.h :
- /usr/local/systemc-2.3.3/include/sysc/packages/boost/utility/string_view.hpp :
- /usr/local/systemc-2.3.3/include/sysc/packages/boost/config.hpp :
- /usr/local/systemc-2.3.3/include/sysc/packages/boost/config/user.hpp :
- /usr/local/systemc-2.3.3/include/sysc/packages/boost/config/select_compiler_config.hpp :
- /usr/local/systemc-2.3.3/include/sysc/packages/boost/config/compiler/gcc.hpp :
- /usr/local/systemc-2.3.3/include/sysc/packages/boost/config/select_stdlib_config.hpp :
- /usr/local/systemc-2.3.3/include/sysc/packages/boost/config/stdlib/libstdcpp3.hpp :
- /usr/local/systemc-2.3.3/include/sysc/packages/boost/config/select_platform_config.hpp :
- /usr/local/systemc-2.3.3/include/sysc/packages/boost/config/platform/linux.hpp :
- /usr/local/systemc-2.3.3/include/sysc/packages/boost/config/posix_features.hpp :
- /usr/local/systemc-2.3.3/include/sysc/packages/boost/config/suffix.hpp :
- /usr/local/systemc-2.3.3/include/sysc/packages/boost/utility/string_view_fwd.hpp :
- /usr/local/systemc-2.3.3/include/sysc/utils/sc_vector.h :
- /usr/local/systemc-2.3.3/include/sysc/packages/boost/utility/enable_if.hpp :
- tlc.h testbench.h :
+ /usr/local/systemc-2.3.3/include/sysc/utils/sc_vector.h tlc.h :
+ testbench.h :
