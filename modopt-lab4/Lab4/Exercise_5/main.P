@@ -114,7 +114,8 @@ main.o: main.cpp /usr/local/systemc-2.3.3/include/systemc.h \
  /usr/local/systemc-2.3.3/include/sysc/packages/boost/utility/string_view_fwd.hpp \
  /usr/local/systemc-2.3.3/include/sysc/utils/sc_vector.h \
  /usr/local/systemc-2.3.3/include/sysc/packages/boost/utility/enable_if.hpp \
- interfaces.h tlm_tlc.h os_drivers.h
+ interfaces.h ../Exercise_3/tlm_tlc.h timer_driver.h hw_drivers.h bus.h \
+ timer_peripheral.h ../Exercise_1/testbench.h
 main.cpp /usr/local/systemc-2.3.3/include/systemc.h :
  /usr/local/systemc-2.3.3/include/systemc :
  /usr/local/systemc-2.3.3/include/sysc/kernel/sc_cmnhdr.h :
@@ -231,4 +232,5 @@ main.cpp /usr/local/systemc-2.3.3/include/systemc.h :
  /usr/local/systemc-2.3.3/include/sysc/packages/boost/utility/string_view_fwd.hpp :
  /usr/local/systemc-2.3.3/include/sysc/utils/sc_vector.h :
  /usr/local/systemc-2.3.3/include/sysc/packages/boost/utility/enable_if.hpp :
- interfaces.h tlm_tlc.h os_drivers.h :
+ interfaces.h ../Exercise_3/tlm_tlc.h timer_driver.h hw_drivers.h bus.h :
+ timer_peripheral.h ../Exercise_1/testbench.h :

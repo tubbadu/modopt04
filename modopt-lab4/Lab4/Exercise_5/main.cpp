@@ -13,7 +13,7 @@ int sc_main (int argc, char * argv[])
 	sc_signal<bool> car("car");
 	sc_signal<color> M("Main"), S("Secondary");
 
-	TLC_SW TLC("Controller") ;
+	Abstract_TLC TLC("Controller") ;
 	BUS bus("Bus");
 	HW_DRIVERS hw_drivers("Car and light driver");
 	TIMER_DRIVER timer_driver("Timer driver");
@@ -29,6 +29,7 @@ int sc_main (int argc, char * argv[])
 	hw_drivers.car(car);
 	hw_drivers.M(M);
 	hw_drivers.S(S);
+	hw_drivers.clk(clk);
     
 	TLC.car(hw_drivers);
 	TLC.light(hw_drivers);

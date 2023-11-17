@@ -10,8 +10,8 @@ int sc_main (int argc, char * argv[])
 	sc_signal<color> M("Main"), S("Secondary");
 	sc_clock clk("clk",sc_time(1, SC_US));
 
-	TLC_SW TLC("Controller") ;
-	HW_DRIVERS hw_drivers("HW driver");
+	Abstract_TLC TLC("Controller");
+	HW_drivers hw_drivers("HW driver");
 	Testbench TB("Testbench");
 	
 	hw_drivers.car(car);

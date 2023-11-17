@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
+
 using namespace std;
 
 // Here you must implement a module that implements all three interfaces
@@ -22,7 +23,7 @@ SC_MODULE(OS_drivers), public light_if, public timer_if, public car_if {
 		cout << sc_time_stamp() << " sec. " << NAMES[c] << endl;
 	}
 	virtual void wait_for_car() {
-		time_t start = time(nullptr); // Since 01/01/1970 in seconds
+		time_t start = time(NULL); // Since 01/01/1970 in seconds
 		
 		cout << "Press enter when car arrives, or type STOP to end: > ";
 		string s;
@@ -31,7 +32,7 @@ SC_MODULE(OS_drivers), public light_if, public timer_if, public car_if {
 			sc_stop();
 		}
 		
-		wait(time(nullptr) - start, SC_SEC);
+		wait(time(NULL) - start, SC_SEC);
 		
 	}
 	virtual void wait_for_sec(unsigned int s) {
